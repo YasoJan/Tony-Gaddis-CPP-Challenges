@@ -5,8 +5,7 @@ by Tony Gaddis Eigth Edition.
 
 ## About
 I'm a CS graduate working through these challenges to sharpen 
-my C++ fundamentals with a focus on MFC-based internal tooling 
-development. Challenges are completed daily and organized by chapter.
+my C++ fundamentals. Challenges are completed daily and organized by chapter.
 
 ## Structure
 Each folder corresponds to a chapter in the book.
