@@ -23,6 +23,7 @@ int main(){
 
   // TODO: Compute the equation for max distance for hwy and city
   cout << "-------------- Distance per Tank of Gas --------------" << endl;
+  cout << fixed << setprecision(2);
   cout << "Max distance for hwy: " << HWY_MAX_DISTANCE << endl;
   cout << "Max distance for city: " << CITY_MAX_DISTANCE << endl;
   cout << "-------------- Distance per Tank of Gas --------------" << endl;
