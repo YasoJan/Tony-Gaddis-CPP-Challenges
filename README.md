@@ -69,3 +69,7 @@ g++ main.cpp -o build/output
 
 ## Status
 🟢 In Progress
+
+## Disclaimer
+This README was generated with the assistance of AI (Claude by Anthropic). 
+All code solutions are written by me, Yasin Zahir.
