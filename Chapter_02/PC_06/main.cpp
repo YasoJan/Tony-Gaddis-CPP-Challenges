@@ -14,7 +14,7 @@ using std::fixed;
 using std::setprecision;
 
 int main(){
-  int pay_amount = 2200;
+  double pay_amount = 2200.0;
   const int PAY_PERIODS = 26;
   int annual_pay = pay_amount * PAY_PERIODS;
 
