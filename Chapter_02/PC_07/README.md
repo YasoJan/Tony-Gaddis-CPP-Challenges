@@ -1,4 +1,4 @@
-# PC_07 - Ocean Levels
+# 7. Ocean Levels
 
 ## Problem
 Assuming the ocean's level is currently rising at about 1.5 millimeters 
