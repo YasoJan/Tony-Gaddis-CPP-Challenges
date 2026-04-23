@@ -23,7 +23,6 @@ int main(){
   double share_commission = COMMISSION * share_total;
   double total = share_total + share_commission;
 
-
   cout << "-------------- Stock Commission --------------" << endl;
   cout << fixed << setprecision(2);
   cout << "Stock alone: $" << share_total << endl;

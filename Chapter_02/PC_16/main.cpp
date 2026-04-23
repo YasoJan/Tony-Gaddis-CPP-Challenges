@@ -17,3 +17,4 @@ int main(){
   cout << "-------------- Diamond Pattern --------------" << endl;
   return 0;
 }
+
