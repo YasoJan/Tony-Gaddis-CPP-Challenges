@@ -38,6 +38,8 @@ int main(){
   cout << "Child Tickets Sold: ";
   cin >> child_tickets;
 
+  cout << "Movie Name: " << movie_name << endl;
+  
   gross_price = (ADULT_PRICE * adult_tickets) + (CHILD_PRICE * child_tickets);
   cout << "Gross Box Office Profit: $" << gross_price << endl;
 
