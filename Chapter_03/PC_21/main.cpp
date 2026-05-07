@@ -12,7 +12,7 @@
 using namespace std;
 
 int main(){
-  string banner =  "--------------  Pizza Pi  --------------";
+  string banner =  "--------------  How Many Pizzas?  --------------";
 
   const double PI = M_PI;
   const double SLICE_AREA = 14.125;
@@ -41,7 +41,7 @@ int main(){
 
   cout << "Number of slices that may be taken from a pizza of that size: " << num_slices << endl;
   
-  num_pizzas = static_cast<int> ((people_at_party * SLICE_PER_PERSON) / num_slices);
+  num_pizzas = static_cast<double>(ceil(people_at_party * SLICE_PER_PERSON)) / num_slices;
 
   cout << "Number of pizzas to purchase: " << num_pizzas << endl;
   
