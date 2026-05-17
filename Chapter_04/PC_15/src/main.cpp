@@ -64,6 +64,7 @@ int main(){
   cout << "Weight: " << package_weight << endl;
   cout << "Distance: " << miles_shipped << endl;
   cout << "Total: $" << total << endl;
+  
   cout << banner << endl;
   return 0;
 }
