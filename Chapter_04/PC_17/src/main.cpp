@@ -26,11 +26,11 @@ int main(){
 
   double min_height = numeric_limits<double>::max();
   double max_height = 0.0;
-
-  double max_index;
-  double med_index;
-  double min_index;
   double height;
+
+  int max_index;
+  int med_index;
+  int min_index;
 
   cout << "Enter the name of the pole vaulter: ";
   getline(cin, name);
@@ -43,21 +43,31 @@ int main(){
     do{
       cout << "Enter the vault height in meters: ";
       getline(cin, string_height);
-      height = stoi(string_height);
+      height = stod(string_height);
     }while(height < 2.0 || height > 5.0);
     heights.push_back(height);
   }
 
   for(int i = 0; i < MAX_VAULTS; i++){
     if(heights[i] > max_height){
-      max_index = i+1; 
+      max_index = i;
+      max_height = heights[i];
     }
-    else if(heights[i] < min_height){
-      min_index = i+1; 
+    if(heights[i] < min_height){
+      min_index = i;
+      min_height = heights[i];
     }
   }
 
-  med_index = (MAX_VAULTS - max_index) - 1;
+  if(heights[0] != heights[max_index] && heights[0] != heights[min_index]){
+    med_index = 0;
+  }
+  else if(heights[1] != heights[max_index] && heights[1] != heights[min_index]){
+    med_index = 1;
+  }
+  else if(heights[2] != heights[max_index] && heights[2] != heights[min_index]){
+    med_index = 2;
+  }
 
   cout << "1st Vault: " << dates[max_index] << endl;
   cout << "Height: " << heights[max_index] << "m" << endl;
