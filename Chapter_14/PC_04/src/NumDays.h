@@ -13,14 +13,19 @@
 class NumDays{
   private:
     double hours;
-    int days;
+    double days;
   public:
-    NumDays(int);
-    double getHours();
-    void setHours(double);
-    int getDays();
-    void setDays(int);
+    NumDays(double);
+    double get_hours();
+    void set_hours(double);
+    double get_days();
+    void set_days(double);
+    void calculate_days();
     //TODO: DEFINE OPERATOR OVERLOADING
-    double operator+ (const NumDays);
+    double operator+ (const NumDays &);
+    double operator- (const NumDays &);
+    double operator++ ();
+    double operator--();
+
 };
 #endif
